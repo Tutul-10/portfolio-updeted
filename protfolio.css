@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main-content {
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px;
+}
+
+.navber {
+    text-align: center;
+    margin: 20px;
+
+}
+
+.navber a {
+    padding: 7px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.flex-1 {
+
+    text-align: center;
+    margin: 50px;
+}
+
+.img-a img {
+
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.text-1 {
+    margin-top: 50px;
+}
+
+
+.text-1 span {
+    color: rgb(241, 125, 67);
+}
+
+.text-1 p {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.button-1 {
+    background-color: rgb(241, 97, 44);
+    padding: 10px;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(240, 248, 255);
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+.about-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+
+.img-b img {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.text-2 h1 {}
+
+
+.text-2 p {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.button-2 {
+    background-color: rgb(231, 93, 43);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: rgb(240, 248, 255);
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.card-section {
+    padding: 20px;
+    margin-top: 50px;
+    background-color: rgb(237, 232, 226);
+    align-items: center;
+}
+
+
+.card-section h1 {
+    text-align: center;
+
+
+}
+
+
+
+.card-section span {
+    color: rgb(213, 62, 32);
+}
+
+.card-flex {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    place-items: center;
+
+}
+
+.card {
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 5px orange;
+}
+
+.card img {
+    padding: 10px;
+    height: 150px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.box-section {
+    place-items: center;
+    padding: 20px;
+}
+
+.box {
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(36, 36, 207);
+    padding: 25px;
+    border-radius: 10px;
+
+}
+
+button:hover {
+    background-color: rgb(238, 12, 223);
+}
+
+.button-3 button:hover {
+    background-color: rgb(255, 0, 179);
+}
+
+.box h1 {
+    color: aliceblue;
+}
+
+.button-3 button {
+    background-color: rgb(250, 102, 49);
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    color: aliceblue;
+    font-size: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.contact-div {
+    text-align: center;
+    margin-top: 50px;
+
+}
+
+.header h1 {
+    font-size: 50px;
+    color: rgb(240, 167, 9);
+}
+
+.contact {
+    padding: 10px;
+    align-items: center;
+    margin-top: 20px;
+    text-align: justify;
+    background-color: aliceblue;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 5px rgb(217, 98, 23);
+}
+
+.contact h1 {
+    line-height: 45px;
+
+
+}
+
+.contact p {
+    font-size: 20px;
+    margin: 8px;
+
+}
+
+.contact-flex {
+    display: grid;
+    place-items: center;
+}
+
+
+
+.footer {
+    padding: 20px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.f-img img {
+    height: 70px;
+    width: 70px;
+    margin: 10px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: center;
+}
+
+.footer h3 {
+    margin: 20px;
+}
+
+
+
+
+@media only screen and (min-width:768px) {
+
+    .navber {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .flex-1 {
+        display: flex;
+        justify-content: space-around;
+        place-items: center;
+        margin: 50px;
+    }
+
+
+    .about-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+        margin-top: 50px;
+
+    }
+
+
+    .card-section h1 {
+
+        margin-top: 20px;
+
+    }
+
+    .card-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        place-items: center;
+        margin-top: 20px;
+
+    }
+
+    .card {
+        width: fit-content;
+        height: auto;
+        margin: 20px;
+    }
+
+
+
+
+    .contact-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        place-items: center;
+
+    }
+
+    .contact {
+        width: fit-content;
+        height: auto;
+        margin: 20px;
+    }
+
+    .f-img img {
+        height: 100px;
+        width: 100px;
+
+    }
+
+    .img-a img {
+        margin: 20px;
+        height: 350px;
+        width: 350px;
+    }
+
+    .text-1 {
+        text-align: justify;
+        font-size: x-large;
+    }
+
+    .box {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .text-2 {
+        text-align: justify;
+
+    }
+
+    .text-2 p {
+        text-align: justify;
+    }
+
+    .card p {
+        text-align: justify;
+        margin-top: 20px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .card h2 {
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .navber a {
+
+        font-size: 25px;
+
+    }
+
+    .img-b img {
+        width: 350px;
+        height: 300px;
+    }
+
+    .button-3 button {
+        margin: 0;
+    }
+
+}
+
+
+
+@media only screen and (min-width:769px) and (max-width:1260px) {
+    .card-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+    }
+
+
+
+    .contact-flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        place-items: center;
+    }
+
+
+    .img-a img {
+
+        height: 250px;
+        width: 250px;
+    }
+
+
+    .img-b img {
+        width: 250px;
+        height: 200px;
+    }
+
+
+}
+
+@media only screen and (max-width:768px) {
+
+
+    .main-content {
+        text-align: center;
+    }
+
+    .contact-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        place-items: center;
+    }
+
+
+
+
+    .card-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        place-items: center;
+    }
+
+
+    .flex-1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+
+}

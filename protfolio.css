@@ -199,6 +199,7 @@ button:hover {
     text-align: justify;
     background-color: aliceblue;
     width: 300px;
+    height: 200px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px 5px rgb(217, 98, 23);
 }
@@ -304,7 +305,8 @@ button:hover {
 
     .contact {
         width: fit-content;
-        height: auto;
+        height: 200px;
+        width: 300px;
         margin: 20px;
     }
 
@@ -436,5 +438,27 @@ button:hover {
         flex-direction: column-reverse;
     }
 
+
+}
+
+@media only screen and (max-width:375px) {
+
+    .contact {
+        width: auto;
+        min-width: 250px;
+        padding: 3px;
+    }
+
+    .img-a img {
+
+        width: 150px;
+        height: 150px;
+
+    }
+
+    .card {
+        width: auto;
+
+    }
 
 }

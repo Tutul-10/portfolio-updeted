@@ -7,7 +7,6 @@
 .main-content {
     max-width: 1400px;
     margin: auto;
-    padding: 10px;
 }
 
 .navber {
@@ -76,13 +75,12 @@
     object-fit: cover;
 }
 
-.text-2 h1 {}
 
 
 .text-2 p {
     font-size: 20px;
     text-align: center;
-    padding: 10px;
+    padding: 2rem;
 }
 
 .button-2 {
@@ -92,11 +90,11 @@
     border-radius: 10px;
     color: rgb(240, 248, 255);
     font-size: 20px;
-    margin-top: 20px;
     cursor: pointer;
 }
 
 .card-section {
+    width: 100%;
     padding: 20px;
     margin-top: 50px;
     background-color: rgb(237, 232, 226);
@@ -110,6 +108,9 @@
 
 }
 
+.header h1 {
+    text-align: center;
+}
 
 
 .card-section span {
@@ -124,15 +125,23 @@
 
 }
 
+.contact-flex {
+    display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
+    place-items: center;
+
+}
+
 .card {
     align-items: center;
     margin-top: 20px;
     text-align: center;
     background-color: aliceblue;
-    width: 300px;
+    width: 400px;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0px 0px 15px 5px orange;
+    box-shadow: 0px 0px 18px 5px rgb(255, 106, 0);
 }
 
 .card img {
@@ -144,16 +153,16 @@
 
 .box-section {
     place-items: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .box {
     text-align: center;
     margin-top: 50px;
     width: 100%;
-    height: 200px;
+    min-height: 150px;
     background-color: rgb(36, 36, 207);
-    padding: 25px;
+    padding: 15px;
     border-radius: 10px;
 
 }
@@ -171,7 +180,7 @@ button:hover {
 }
 
 .button-3 button {
-    background-color: rgb(250, 102, 49);
+    background-color: orangered;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -182,8 +191,11 @@ button:hover {
 }
 
 .contact-div {
-    text-align: center;
+
+    padding: 20px;
     margin-top: 50px;
+
+    align-items: center;
 
 }
 
@@ -192,21 +204,21 @@ button:hover {
     color: rgb(240, 167, 9);
 }
 
+
 .contact {
-    padding: 10px;
     align-items: center;
     margin-top: 20px;
-    text-align: justify;
-    background-color: aliceblue;
-    width: 300px;
-    height: 200px;
+    text-align: center;
+    width: 400px;
+    height: 300px;
     border-radius: 10px;
-    box-shadow: 0px 0px 15px 5px rgb(217, 98, 23);
+    padding: 20px;
+    box-shadow: 0px 0px 18px 5px orangered;
 }
 
 .contact h1 {
     line-height: 45px;
-
+    text-align: center;
 
 }
 
@@ -218,6 +230,8 @@ button:hover {
 
 .contact-flex {
     display: grid;
+    grid-template-rows: auto;
+    gap: 10px;
     place-items: center;
 }
 
@@ -247,7 +261,19 @@ button:hover {
 
 
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width:699px) {
+
+    .card {
+        /* width: auto; */
+        width: 100%;
+        padding: 5px;
+    }
+
+    .card-section {
+        width: 100%;
+        padding: 10px;
+    }
+
 
     .navber {
         display: grid;
@@ -293,22 +319,22 @@ button:hover {
     }
 
 
-
-
     .contact-flex {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
         gap: 15px;
         place-items: center;
-
     }
+
 
     .contact {
-        width: fit-content;
-        height: 200px;
-        width: 300px;
-        margin: 20px;
+        /* width: auto; */
+        width: 330px;
+        padding: 5px;
     }
+
+
 
     .f-img img {
         height: 100px;
@@ -340,6 +366,7 @@ button:hover {
 
     .text-2 p {
         text-align: justify;
+
     }
 
     .card p {
@@ -373,7 +400,20 @@ button:hover {
 
 
 
-@media only screen and (min-width:769px) and (max-width:1260px) {
+@media only screen and (min-width:699px) and (max-width:1260px) {
+
+    .contact h1 {
+        line-height: 45px;
+        text-align: center;
+
+    }
+
+    .card-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+
     .card-flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -386,9 +426,16 @@ button:hover {
     .contact-flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
         gap: 15px;
-        place-items: start;
+        grid-template-rows: auto;
+        place-items: center;
+    }
+
+
+    .contact {
+        /* width: auto; */
+        max-width: 300px;
+        padding: 5px;
     }
 
 
@@ -407,8 +454,25 @@ button:hover {
 
 }
 
-@media only screen and (max-width:768px) {
+@media only screen and (max-width:699px) {
 
+    .card-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card {
+        /* width: auto; */
+        width: 100%;
+        padding: 5px;
+    }
+
+
+    .contact {
+        /* width: auto; */
+        width: 300px;
+        padding: 5px;
+    }
 
     .main-content {
         text-align: center;
@@ -422,9 +486,6 @@ button:hover {
         place-items: center;
     }
 
-
-
-
     .card-flex {
         display: grid;
         grid-template-columns: 1fr;
@@ -436,6 +497,7 @@ button:hover {
     .flex-1 {
         display: flex;
         flex-direction: column-reverse;
+
     }
 
 
@@ -443,23 +505,43 @@ button:hover {
 
 @media only screen and (max-width:375px) {
 
-    .contact {
+    .card-section {
+        width: 100%;
+
+        margin-top: 50px;
+        background-color: rgb(237, 232, 226);
+        align-items: center;
+    }
+
+
+    .card {
         /* width: auto; */
         width: 100%;
         padding: 5px;
-
     }
 
-    .img-a img {
+
+    */ .img-a img {
 
         width: 150px;
         height: 150px;
 
     }
 
-    .card {
-        width: auto;
 
+    .contact-flex {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 15px;
+        place-items: center;
+    }
+
+
+    .contact {
+        /* width: auto; */
+        width: 100%;
+        margin: auto;
     }
 
 }

@@ -439,7 +439,6 @@ button:hover {
     .contact-flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 15px;
         grid-template-rows: auto;
         place-items: center;
     }
@@ -447,7 +446,7 @@ button:hover {
     .contact {
         /* width: auto; */
         max-width: 300px;
-        padding: 5px;
+        padding: 15px;
     }
 
     .img-a img {

@@ -21,6 +21,14 @@
     cursor: pointer;
 }
 
+.navber a:hover {
+    color: brown;
+    text-decoration: underline;
+    transition: 1s;
+}
+
+
+
 .flex-1 {
 
     text-align: center;
@@ -36,7 +44,7 @@
 }
 
 .img-a img:hover {
-
+    cursor: pointer;
     transform: scale(1.1);
     transition: 0.6s;
 }
@@ -62,8 +70,8 @@
     border: none;
     border-radius: 10px;
     color: rgb(240, 248, 255);
-    margin: 10px;
     cursor: pointer;
+    width: 200px;
 }
 
 
@@ -82,6 +90,7 @@
 }
 
 .img-b img:hover {
+    cursor: pointer;
     transform: scale(1.1);
     transition: 0.6s;
 }
@@ -92,7 +101,7 @@
 
 .text-2 h1 {
     padding: 5px;
-
+    color: rgb(44, 44, 137);
 }
 
 .text-2 p {
@@ -113,10 +122,12 @@
     color: rgb(240, 248, 255);
     font-size: 20px;
     cursor: pointer;
+    margin: 5px;
 }
 
 .card-section {
     width: 100%;
+    border: 1px solid rgb(229, 217, 213);
     padding: 20px;
     margin-top: 50px;
     background-color: rgb(237, 232, 226);
@@ -163,7 +174,7 @@
     width: 400px;
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 0px 0px 18px 5px rgb(255, 106, 0);
+    box-shadow: 0px 0px 10px 5px rgb(255, 106, 0);
 }
 
 .card img {
@@ -171,6 +182,7 @@
     height: 150px;
     width: 250px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .box-section {
@@ -180,22 +192,19 @@
 
 .box {
     text-align: center;
-    margin-top: 50px;
+    margin-top: 30px;
     width: 100%;
     min-height: 150px;
-    background-color: rgb(36, 36, 207);
+    background-color: rgb(54, 54, 158);
     padding: 15px;
     border-radius: 10px;
-
 }
 
 button:hover {
-    background-color: rgb(238, 12, 223);
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 
-.button-3 button:hover {
-    background-color: rgb(255, 0, 179);
-}
 
 .box h1 {
     color: aliceblue;
@@ -213,16 +222,12 @@ button:hover {
 }
 
 .contact-div {
-
     padding: 20px;
-    margin-top: 50px;
-
+    margin-top: 20px;
     align-items: center;
-
 }
 
 .header h1 {
-    font-size: 50px;
     color: rgb(240, 167, 9);
 }
 
@@ -235,8 +240,12 @@ button:hover {
     height: 300px;
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0px 0px 18px 5px orangered;
+    box-shadow: 0px 0px 10px 5px orangered;
+}
 
+.contact:hover {
+    transform: scale(1.04);
+    transition: 0.5s;
 }
 
 .contact h1 {
@@ -249,7 +258,6 @@ button:hover {
     font-size: 20px;
     margin: 8px;
     margin-top: 30px;
-
 }
 
 .contact-flex {
@@ -271,7 +279,10 @@ button:hover {
     height: 70px;
     width: 70px;
     margin: 10px;
+    cursor: pointer;
 }
+
+
 
 .footer-flex {
     display: flex;
@@ -281,8 +292,6 @@ button:hover {
 .footer h3 {
     margin: 20px;
 }
-
-
 
 
 @media only screen and (min-width:699px) {
@@ -298,10 +307,15 @@ button:hover {
         padding: 10px;
     }
 
-
     .navber {
         display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .navber a:hover {
+        color: brown;
+        text-decoration: underline;
+        transition: 1s;
     }
 
     .flex-1 {
@@ -311,7 +325,6 @@ button:hover {
         margin: 50px;
     }
 
-
     .about-section {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -320,11 +333,8 @@ button:hover {
 
     }
 
-
     .card-section h1 {
-
         margin-top: 20px;
-
     }
 
     .card-flex {
@@ -333,7 +343,6 @@ button:hover {
         gap: 15px;
         place-items: center;
         margin-top: 20px;
-
     }
 
     .card {
@@ -341,7 +350,6 @@ button:hover {
         height: auto;
         margin: 20px;
     }
-
 
     .contact-flex {
         display: grid;
@@ -351,19 +359,15 @@ button:hover {
         place-items: center;
     }
 
-
     .contact {
         /* width: auto; */
         width: 330px;
         padding: 5px;
     }
 
-
-
     .f-img img {
         height: 100px;
         width: 100px;
-
     }
 
     .img-a img {
@@ -390,7 +394,6 @@ button:hover {
 
     .text-2 p {
         text-align: justify;
-
     }
 
     .card p {
@@ -406,9 +409,7 @@ button:hover {
     }
 
     .navber a {
-
         font-size: 25px;
-
     }
 
     .img-b img {
@@ -429,7 +430,10 @@ button:hover {
     .contact h1 {
         line-height: 45px;
         text-align: center;
+    }
 
+    .navber a {
+        line-height: 35px;
     }
 
     .card-section {
@@ -437,15 +441,12 @@ button:hover {
         padding: 10px;
     }
 
-
     .card-flex {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: auto;
         place-items: center;
     }
-
-
 
     .contact-flex {
         display: grid;
@@ -455,26 +456,21 @@ button:hover {
         place-items: center;
     }
 
-
     .contact {
         /* width: auto; */
         max-width: 300px;
         padding: 5px;
     }
 
-
     .img-a img {
-
         height: 250px;
         width: 250px;
     }
-
 
     .img-b img {
         width: 250px;
         height: 200px;
     }
-
 
 }
 
@@ -491,6 +487,13 @@ button:hover {
         padding: 5px;
     }
 
+    .navber a {
+        line-height: 35px;
+    }
+
+    .header h1 {
+        padding: 10px;
+    }
 
     .contact {
         /* width: auto; */
@@ -517,17 +520,14 @@ button:hover {
         place-items: center;
     }
 
-    .text-2 p {
+    .text-2 {
         padding: 2rem;
     }
-
 
     .flex-1 {
         display: flex;
         flex-direction: column-reverse;
-
     }
-
 
 }
 
@@ -535,12 +535,14 @@ button:hover {
 
     .card-section {
         width: 100%;
-
         margin-top: 50px;
         background-color: rgb(237, 232, 226);
         align-items: center;
     }
 
+    .header h1 {
+        padding: 10px;
+    }
 
     .card {
         /* width: auto; */
@@ -548,14 +550,11 @@ button:hover {
         padding: 5px;
     }
 
-
-    */ .img-a img {
+    .img-a img {
 
         width: 150px;
         height: 150px;
-
     }
-
 
     .contact-flex {
         display: grid;
@@ -565,11 +564,11 @@ button:hover {
         place-items: center;
     }
 
-
     .contact {
         /* width: auto; */
         width: 100%;
         margin: auto;
+        margin-top: 8px;
     }
 
 }
